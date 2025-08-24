@@ -59,6 +59,7 @@ export async function seed() {
       )
       ON CONFLICT (company) DO NOTHING;
     `;
+    console.log(`Inserted ${row.Company}`);
   }
 
   console.log(`Seeded ${results.length} unicorns`);
